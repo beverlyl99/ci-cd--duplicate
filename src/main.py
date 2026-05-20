@@ -1,6 +1,6 @@
 import pandas as pd
 
-def load_and_process_data(filepath="data/dataset.csv", output_path="data/processed_dataset.csv"):
+def load_and_process_data(filepath="/content/dataset.csv", output_path="data/processed_dataset.csv"):
     """Loads the dataset, removes duplicate rows, and saves the processed dataset."""
     df = pd.read_csv(filepath)
     print(f"Original dataset shape: {df.shape}")
